@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 799" width="480" height="799">
+	<title>Background-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h480v799h-480z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #181826 } 
+		.s1 { fill: #4945ff } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m0 0h480v799h-480z"/>
+			<path id="Layer" class="s1" d="m-103.7 1079l-494.5-114.5-84.8-789.9 442-373.6 358 559z"/>
+			<path id="Layer" class="s1" d="m504 858.8l-116 47.2-78-103.1 67.9-110.9 119.9 34.5z"/>
+		</g>
+	</g>
+</svg>
