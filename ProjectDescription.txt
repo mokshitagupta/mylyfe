@@ -1,0 +1,68 @@
+Project Description - MyLyfe 
+This project aims to create a social media application for users 
+to document all parts of their life - hence the name MyLyfe.
+We plan to offer pre-built interfaces to log goals and notifications 
+to check in and be informed about your friends’ progress updates.
+There will also be an Explore page, that will allow users to peek 
+into other people’s Lyfes and see what they’re up to: a new workout 
+goal? Their fall schedule? A new reading goal? A new smoothie recipe?
+The possibilities are endless! There will be scope for inter-user 
+communication through likes, shares and comments, and we hope to end 
+up with an application that brings all of us closer together and 
+creates a supportive community!
+
+
+What kind of users are we looking for?
+A typical user of our website would be someone who is looking to
+improve their life and looking for a community to do so. A user 
+wanting to begin going to the gym can start here! On our website, 
+they will be able to find other users' workout routines, and create 
+their own. They will be able to set their own daily, weekly, monthly, 
+or yearly goals and check them off. When you’re surrounded by people
+working towards the same goal as you, you’re held more accountable 
+for your goals and can encourage each other! We hope by creating this 
+website other’s will be more inspired to improve their lives in 
+whatever way they want! 
+
+
+Team Contract  
+Team 11 (Aquafit) Members: Mokshita Gupta, Taylor Evans, Shafin Ahmad, 
+Muhtasim Mushfiq, Andrew Cao 
+Project Manager: Misha Chekhov
+Zenhub: https://app.zenhub.com/workspaces/aquafit-cse370-63e502f92c325d1932c3db52/board
+Github: https://github.com/CSE370HCI/aquafit
+
+
+Roles:
+* Shafin - Programmer, Meeting Minutes Primary
+* Mokshita - Programmer, Meeting Minutes Backup
+* Taylor - Programmer, Organizer
+* Muhtasim - Programmer 
+* Andrew - Programmer
+
+
+Expectations:
+* Show up on time for the weekly meetings in person. If you can’t make it, notify the team in advance. 
+* If you can’t physically make it, join via Zoom/Discord (for emergencies). 
+* Be honest about your schedule.
+* Communicate frequently and try to respond within a reasonable time frame- check the team Discord regularly!
+* Let others know in advance if you are struggling or can't finish in time.
+* Stay for the entire minimum duration of the meetings. 
+
+
+Policies:
+* Write a summary of each meeting (weekly), and share it with everyone (Meeting Minutes). 
+Shafin will write them. If Shafin can’t make it, Mokshita will write them instead.
+* Expect meetings to be longer than 30 minutes but shorter than an hour. Uncharacteristically 
+longer or shorter meetings can be agreed upon in advance.
+* Handle conflicts with Rock Paper Scissors.
+* Maintain Server/Github/Zenhub/Figma Hygiene:
+   * Write a commit message that explains your push.
+   * Make sure you’re on the correct branch before you push. 
+   * Post in #progress-updates to inform each other of our progress.
+   * Post in #questions-and-help when in need of help.
+   * Comment code aggressively.
+
+
+Consequences:
+* Read the meeting minutes if you miss a meeting.

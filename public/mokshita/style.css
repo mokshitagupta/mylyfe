@@ -1,0 +1,336 @@
+@font-face{
+  font-family: 'husky';
+  src: url("./assets/HUSKYSTA.TTF");
+}
+
+@font-face{
+  font-family: 'lorea';
+  src: url("./assets/Nasir\ Udin\ -\ RestoraExtraLight.otf");
+}
+
+@media only screen and (max-device-width: 480px) {
+.initial{
+  font-size: 120%;
+  font-style: italic 120deg;
+
+/*   font: 500%; */
+  position:relative;
+/*   top: -5px; */
+
+}
+
+div.middle{
+  display:flex;
+  justify-content: space-between;
+}
+
+.stars{
+  position: relative;
+  left: 65%;
+  z-index: 2;
+  top: 55%;
+  animation: blink-animation 2.5s linear infinite;
+}
+
+@keyframes blink-animation{
+  0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: .75;
+        }
+        50% {
+          opacity: 1;
+        }75% {
+          opacity: 0.75;
+        }
+      100% {
+          opacity: 0;
+        }
+        
+}
+
+img.myimg{
+  order:2;
+  z-index: 1;
+  border-radius: 50%;
+  position: relative;
+  height:20%;
+/*   padding-right: 50%; */
+  margin-right: 12%;
+  align-self: center;
+/*   justify-content:space-around; */
+/*   align-content: space-around; */
+  top: -40px;
+  margin-left:0%;
+ 
+  
+}
+
+
+body.middle{
+  order:1;
+  
+  align-self:flex-end;
+  width:200%;
+  padding-right: 0%;
+  margin-right: 55%;
+  padding-top: 20%;
+  
+}
+
+
+.myname{
+  font-size: 120%;
+  font-weight: bolder;
+  font-style: italic 100deg;
+/*   font-style: italic; */
+  color: #242331;
+/*   text-shadow: 0px 0px 1px blanchedalmond; */
+}
+
+ul{
+  margin-top: 3%;
+}
+li {
+  padding-bottom: 3%;
+  margin-left: -100%;
+  margin-top: 0%;
+  margin-right: 10%;
+  font-weight: bold;
+  color: #242331;
+/*   margin-bottom: 10%; */
+  font-family: 'lorea',Fallback, sans-serif;
+  font-size: 25px;
+  list-style-type: none
+}
+
+.header{
+  display:flex;
+  flex-direction: column;
+
+}
+
+
+
+h1 {
+  font-family: 'husky', Fallback, sans-serif;
+  font-size: 700%;
+  margin-left: 18%;
+  letter-spacing: 3px;
+  color: ghostwhite;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  font-style: italic 90deg;
+  width: 100%;
+}
+
+span.body{
+  transition: font-size 0.1s ease-in;
+  font-size: 100%;
+  
+}
+span.body:hover{
+  transition: font-size 0.08s ease-in once;
+  font-size: 102%;
+  
+}
+
+body {
+  
+  background: radial-gradient(circle, rgba(0,212,255,0.75) 0.5%, rgba(148,187,233,1) 14%, rgba(255,0,112,1) 77%);
+  background-size: 150% 100%;
+  animation: gradient 20s ease infinite;
+  text-align: top;
+  
+/*   height: 100vh; */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 5% 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 5% 100%;
+	}
+}
+
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+}
+
+@media only screen and (min-device-width: 480px) {
+
+  .initial{
+    font-size: 120%;
+    font-style: italic 120deg;
+  
+  /*   font: 500%; */
+    position:relative;
+  /*   top: -5px; */
+  
+  }
+  
+  div.middle{
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .stars{
+    position: relative;
+    left: 65%;
+    z-index: 2;
+    top: 55%;
+    animation: blink-animation 2.5s linear infinite;
+  }
+  
+  @keyframes blink-animation{
+    0% {
+            opacity: 0;
+          }
+          25% {
+            opacity: .75;
+          }
+          50% {
+            opacity: 1;
+          }75% {
+            opacity: 0.75;
+          }
+        100% {
+            opacity: 0;
+          }
+          
+  }
+  
+  img.myimg{
+    order:2;
+    z-index: 1;
+    border-radius: 50%;
+    position: relative;
+    width: 20%;
+    height:20%;
+  /*   padding-right: 50%; */
+    margin-right: 12%;
+    align-self: center;
+  /*   justify-content:space-around; */
+  /*   align-content: space-around; */
+    top: -40px;
+    margin-left:0%;
+   
+    
+  }
+  
+  
+  body.middle{
+    order:1;
+    
+    align-self:flex-end;
+    width:200%;
+    padding-right: 0%;
+    margin-right: 55%;
+    padding-top: 20%;
+    
+  }
+  
+  
+  .myname{
+    font-size: 120%;
+    font-weight: bolder;
+    font-style: italic 100deg;
+  /*   font-style: italic; */
+    color: #242331;
+  /*   text-shadow: 0px 0px 1px blanchedalmond; */
+  }
+  
+  ul{
+    margin-top: 3%;
+  }
+  li {
+    padding-bottom: 3%;
+    margin-left: 5%;
+    margin-top: 0%;
+    margin-right: 10%;
+    font-weight: bold;
+    color: #242331;
+  /*   margin-bottom: 10%; */
+    font-family: 'lorea',Fallback, sans-serif;
+    font-size: 25px;
+    list-style-type: none
+  }
+  
+  .header{
+    display:flex;
+    flex-direction: column;
+  
+  }
+  
+  
+  
+  h1 {
+    font-family: 'husky', Fallback, sans-serif;
+    font-size: 700%;
+    letter-spacing: 3px;
+    color: ghostwhite;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-style: italic 90deg;
+    width: 100%;
+  }
+  
+  span.body{
+    transition: font-size 0.1s ease-in;
+    font-size: 100%;
+    
+  }
+  span.body:hover{
+    transition: font-size 0.08s ease-in once;
+    font-size: 102%;
+    
+  }
+  
+  body {
+    
+    background: radial-gradient(circle, rgba(0,212,255,0.75) 0.5%, rgba(148,187,233,1) 14%, rgba(255,0,112,1) 77%);
+    background-size: 150% 100%;
+    animation: gradient 20s ease infinite;
+    text-align: top;
+    
+  /*   height: 100vh; */
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 5% 100%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 5% 100%;
+    }
+  }
+  
+  main {
+    text-align: center;
+    vertical-align: center;
+    line-height: 100vh
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+}

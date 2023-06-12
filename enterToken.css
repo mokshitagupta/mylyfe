@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Content:wght@700&family=Inter&family=Poppins:ital,wght@0,100;0,300;1,100;1,400&display=swap');
+
+.token {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFF;
+}
+
+.backgroundToken {
+  position:absolute;
+  width: 100%;
+  height: 100%; ;
+  overflow:hidden;
+  padding-top: 7%;
+  pointer-events: none;
+  left:0%;
+}
+
+.tokenInput {
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  left: 50%;
+  height: 8%;
+  width: 31%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: #FFFF;
+  background-color: #EAF0F7;
+}
+
+.tokenInput[type="text"] {
+  font-size:24px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+.token-placeholder {
+  position: absolute;
+  font-family: 'Poppins';
+  color: #4F555A;
+  font-size: 24px;
+  top: 28.5%;
+  left: 36%;
+  text-align: left;
+  pointer-events:none;
+}
+
+.tokenInput:focus ~ .token-placeholder,
+.tokenInput:valid ~ .token-placeholder {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
+
+
+.tokenBtn {
+  position:absolute;
+  top: 45%;
+  left: 45.5%;
+  height: 8%;
+  width: 20%; 
+  color: #ffffff;
+  background-color: #34A853;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Content', sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 3px;
+}
+
+.tokenBtn:hover {
+  background-color: #2b7f41;
+  border-left: 8px #c2c2c2;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tokenBtn{
+    display: grid;
+    grid-auto-flow: column;
+    box-sizing: border-box;
+    margin-top: auto;
+    text-align: center;
+    background: #34A853;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-transition: background-color 200ms ease-in;
+    border-radius: 20px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    width: 20vmin;
+    height: 9vmin;
+    align-items: center;
+    border: transparent;
+    color: white;
+    justify-content: space-around;
+    justify-items: start;
+    align-content: space-around;
+}

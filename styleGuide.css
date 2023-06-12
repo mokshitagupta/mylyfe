@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap);
+
+:root {
+    --text-color: black;
+    --background-color: white;
+    --button-color: #efefef; 
+    --button-hover: #c2c2c2;
+  }
+
+.body2 {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    font-weight: 400;
+    margin-top: 4vh;
+    margin-bottom: 5rem;
+    font-family: 'Poppins';
+}
+
+/*---------------Boxes------------*/
+@media only screen and (max-device-width: 480px) {
+.info {
+    margin-top: -20%;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.new-topic {
+    display: grid;
+    overflow: hidden;
+    align-items: stretch;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+.row {
+    display: grid;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    grid-auto-flow: row;
+}
+
+/*------------Text-------------*/
+
+h1 {
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-size: 2.5vmin;
+    text-shadow: none;
+    margin: auto;
+    position: relative;
+    z-index: 4;
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-size: 3vmin;
+    margin: auto;
+    display: block;
+    text-shadow: none;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-weight: 500;
+    overflow: hidden;
+    max-width: 80%;
+    line-height: 1.8em;
+    position: relative;
+    z-index: 4;
+}
+
+h29 {
+    color: black;
+    font-family: 'Poppins';
+    font-size: 3vmin;
+    margin: auto;
+    display: block;
+    text-shadow: none;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-weight: 500;
+    overflow: hidden;
+    max-width: 80%;
+    line-height: 1.8em;
+    position: relative;
+    z-index: 4;
+}
+
+h4 {
+    color: var(--text-color);
+    font-family: 'Poppins';
+    font-size: 4.5vmin;
+    margin: auto;
+}
+ 
+.buttonInput {
+    white-space: pre-wrap;
+}
+
+.hideme {
+    visibility: hidden;
+}
+
+/*--------------Images-------------*/
+
+img#buttonex {
+    display: block;
+    align-items: center;
+    position: absolute;
+    padding-right: 0.5rem;
+    width: 7%;
+}
+
+img#logo2 {
+    margin: auto;
+    padding-left: 1rem;
+    width: 50%;
+    padding-bottom: 2rem;
+}
+
+img#typeface {
+    margin: auto;
+    width: 100%;
+}
+
+img#bestcombos {
+    margin: auto;
+    width: 100%;
+}
+
+img#buttons {
+    margin: auto;
+    width: 100%;
+}
+
+img#popup {
+    margin: auto;
+    width: 100%;
+}
+
+img#colors {
+    margin: auto;
+    width: 100%;
+}
+
+img#feedback {
+    margin: auto;
+    width: 100%;
+}
+
+img#layout {
+    margin: auto;
+    width: 100%;
+}
+
+img#help {
+    margin: auto;
+    width: 100%;
+}
+/*----------Buttons----------*/
+
+#example-button {
+    display: grid;
+    box-sizing: border-box;
+    margin-top: auto;
+    background: var(--button-color);
+    text-shadow: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-transition: background-color 200ms ease-in;
+    border-radius: 20px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    width: 20vmin;
+    height: 9vmin;
+    align-items: center;
+    border: transparent;
+}
+}
+
+@media only screen and (min-device-width: 480px) {
+    .info {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    
+    .new-topic {
+        display: grid;
+        overflow: hidden;
+        align-items: stretch;
+        justify-items: center;
+        padding-bottom: 3rem;
+    }
+    
+    .row {
+        display: grid;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-auto-flow: column;
+    }
+    
+    /*------------Text-------------*/
+    
+    h1 {
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 2.2vmin;
+        text-shadow: none;
+        margin: auto;
+        position: relative;
+        z-index: 4;
+    }
+    
+    h2 {
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 2.2vmin;
+        margin: auto;
+        display: block;
+        text-shadow: none;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        font-weight: 500;
+        overflow: hidden;
+        max-width: 80%;
+        line-height: 1.8em;
+        position: relative;
+        z-index: 4;
+    }
+
+    h29 {
+        color: black;
+        font-family: 'Poppins';
+        font-size: 2.2vmin;
+        margin: auto;
+        display: block;
+        text-shadow: none;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        font-weight: 500;
+        overflow: hidden;
+        max-width: 80%;
+        line-height: 1.8em;
+        position: relative;
+        z-index: 4;
+    }
+    
+    h4 {
+        color: var(--text-color);
+        font-family: 'Poppins';
+        font-size: 4.5vmin;
+        margin: auto;
+    }
+     
+    .buttonInput {
+        white-space: pre-wrap;
+    }
+    
+    .hideme {
+        visibility: hidden;
+    }
+    
+    /*--------------Images-------------*/
+    
+    img#buttonex {
+        display: block;
+        align-items: center;
+        position: absolute;
+        padding-right: 0.5rem;
+        width: 3.5%;
+    }
+    
+    img#logo2 {
+        margin: auto;
+        padding-left: 1rem;
+        width: 30%;
+        padding-bottom: 5rem;
+    }
+    
+    img#typeface {
+        margin: auto;
+        padding-left: 1rem;
+        width: 77%;
+    }
+    
+    img#bestcombos {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#buttons {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#popup {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#colors {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#feedback {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#layout {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    
+    img#help {
+        margin: auto;
+        padding-left: 1rem;
+        width: 75%;
+    }
+    /*----------Buttons----------*/
+    
+    #example-button {
+        display: grid;
+        box-sizing: border-box;
+        margin-top: auto;
+        background: var(--button-color);
+        text-shadow: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-transition: background-color 200ms ease-in;
+        border-radius: 20px;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        width: 20vmin;
+        height: 9vmin;
+        align-items: center;
+        border: transparent;
+    }
+}
+/*----------Hover Effects------------*/
+
+#example-button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
+    border-left: 8px  var(--button-hover);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+

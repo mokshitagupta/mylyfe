@@ -1,0 +1,870 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Oswald:wght@700&family=Poppins&display=swap");
+
+:root {
+    --feed-title: #34A853;
+    --feed-background: #efefef; 
+    --border-color: rgb(211,211,211,0.7);
+    --counter-color: black;
+  }
+
+  .line4 {
+    border-bottom: 1rem;
+    background-color: var(--border-color);
+    width: 100%;
+    margin-top: 5rem;
+    height: 3px
+}
+
+.bodyfeed {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin-top: 8vh;
+    padding-bottom: 8rem;
+}
+
+@media only screen and (min-device-width: 480px) {
+    .circle5:hover {
+        cursor: pointer;
+  transform: scaleY(1.08);
+  transform: scaleX(1.015);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.075), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    
+    .likeCounter {
+        font-size: 1.5vmin;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        background-color: white;
+        border-radius: 50rem;
+        left: 40%;
+        bottom: -45%;
+        z-index: 3;
+        width: 25%;
+        height: 27%;
+    }
+.feed-box{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    background: var(--feed-background); 
+    width: 70%;
+    position: relative;
+    top: 2rem;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.feed-box:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+@keyframes h1 {
+    0%   {
+        top:0.6vh;
+    }
+    25%  {
+        top:0.2vh;
+        opacity: 0.75;
+        left: 5%;
+    }
+    50%  {
+        top:-0.2vh;
+        opacity: 0.5;
+        left: -3%;
+    }
+    75%  {
+        top:-0.6vh;
+        opacity: 0.25;
+        left: 1%;
+    }
+    100% {
+        top:-1.2vh;
+        opacity: 0;
+        left: -2%;
+        display: none;
+    }
+}
+
+@keyframes h2 {
+    0%   {
+        top:7vh;
+    }
+    25%  {
+        top:6.2vh;
+        opacity: 0.75;
+        left: 5%;
+    }
+    50%  {
+        top:5.4vh;
+        opacity: 0.5;
+        left: -9%;
+    }
+    75%  {
+        top:4.6vh;
+        opacity: 0.25;
+        left: -4%;
+    }
+    100% {
+        top:3.2vh;
+        opacity: 0;
+        left: 3%;
+        display: none;
+    }
+}
+
+@keyframes h3 {
+    0%   {
+        top:15vh;
+    }
+    25%  {
+        top:14.2vh;
+        opacity: 0.75;
+        left: -5%;
+    }
+    50%  {
+        top:13.4vh;
+        opacity: 0.5;
+        left: 4%;
+    }
+    75%  {
+        top:12.6vh;
+        opacity: 0.25;
+        left: -2%;
+        
+    }
+    100% {
+        top:11.2vh;
+        opacity: 0;
+        left: 1%;
+        display: none;
+    }
+}
+
+#heart1{
+    position: relative;
+    scale: 0.5;
+    /* top: 3vh; */
+    top:1vh;
+    left: -10%;
+    transform: rotate(4deg);
+    animation: h1 0.6s ease-out ;
+}
+
+#heart2{
+    position: relative;
+    margin-top:0;
+    left: -25%;
+    transform: rotate(-10deg);
+    /* top: 7vh; */
+
+    top: 7vh;
+    scale: 0.75;
+    animation: h2 0.8s ease-out ;
+}
+
+#heart3{
+    position: relative;
+    scale: 0.6;
+    top:15vh;
+    left: 10%;
+    transform: rotate(7deg);
+    animation: h3 0.8s ease-out ;
+    /* top: 9vh; */
+}
+
+.heart-wrap{
+    display: flex;
+    display: column;
+    /* margin-top: 1.1%; */
+    gap:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: end;
+    
+}
+
+.love-div-short{
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0px;
+    height: 30vh;
+    position: absolute;
+    width: 5vw;
+    top: 0;
+    left: 1vw;
+    /* background-color: black; */
+}
+
+.love-div-long{
+    margin-top: -26vh;
+    display: flex;
+    flex-direction: column-reverse;
+    gap:0px;
+    height: 30vh;
+    position: absolute;
+    width: 5vw;
+    /* top: 0; */
+    left: 1vw;
+    z-index: 100;
+    /* background-color: black; */
+}
+
+.comment-div{
+        font-size: 90%;
+        margin-top: 0vh;
+        padding-top: 0vh;
+        
+}
+
+.cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 24vh;
+    top:0;
+    width: 100%;
+    overflow-y:auto;
+    /* margin: 0;
+    padding: 0; */
+    /* gap:0px; */
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    transform: opacity 0.5s ease-in-out;
+}
+
+.cs-wrapper.open {
+    max-height: 24vh;
+  }
+
+@keyframes dropdown {
+    100% {height: 160%;}
+}
+
+.interaction-bttn{
+    width: 5vw;
+    /* height: 3vh; */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin: 0;
+}
+
+
+.feed-title{
+    
+    box-sizing: border-box;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: 12vh; /* needs to be absoulute because cant be resized when div expands. might need to fiddle for a better number*/
+    background: var(--feed-title);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1%;
+    /* display: block; */
+}
+
+.feed-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    /* flex-: 8vh; */
+}
+
+.textgrid {
+    /* padding-top: 10%; */
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-content: start;
+    align-items: baseline;
+    justify-items: start;
+}
+
+.comment-bar {
+    font-weight: 500;
+    padding-left: 1rem;
+    font-family: 'Poppins';
+    padding-right: 1rem;
+    align-self: center;
+    justify-self: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: 5vh;
+    border: none;
+    width: 100%;
+    outline: black;
+    /* padding-left: 0; */
+}
+
+.comment-bar::placeholder {
+    font-size: 120%;
+    /* margin-left: 0; */
+    /* padding-left: 0; */
+    float: left;
+    left: 3%;
+    top: 20%;
+}
+
+.comment-bar input[type="text"]{
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.cin-wrapper{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-items: center;
+    /* padding-left: 0;
+    margin-left: 0; */
+    /* left: -4.5%; */
+    /* height: 5vh; */
+}
+
+.comment-bar:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
+}
+
+.footbox {
+    display: flex;
+    width: 100%;
+    height: 18%;
+    flex-direction: row;    
+    /* align-content: center;
+    justify-content: start;
+    justify-items: stretch;
+    align-items: center; */
+}
+
+.circle5 {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    float: left;
+    width: 9vmin;
+    height: 9vmin;
+    background-color: #ffffff00;
+    border: 4px #ffffff00;
+}
+
+h12 {
+    font-weight: 500;
+    color:black;
+    font-size: 70%;
+    font-family: "Poppins";
+    position: absolute;
+    left: 82%;
+    top: 85%;
+}
+
+h15 {
+    float: left;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    font-family: "Poppins";
+
+}
+
+h16 {
+    float: left;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    font-family: "Poppins";
+    font-size: 60%;
+}
+
+/*-----------------Images----------------*/
+img#checkf {
+    display: block;
+    align-items: center;
+    position: absolute;
+    padding-right: 0.5rem;
+    width: 6%;
+}
+
+img#readcomments {
+    display: block;
+    align-items: center;
+    padding-right: 0.5rem;
+    /* padding-left: 1rem; */
+    width: 90%;
+    transform: scale();
+    position: relative;
+}
+
+img#readcomments:hover {
+    transform: scaleY(1.3);
+    transform: scaleX(1.07);
+}
+
+img#writecomments {
+    display: block;
+    align-items: center;
+    padding-right: 0rem;
+    padding-left: 0.5rem;
+    width: 90%;
+    transform: scale();
+    position: relative;
+}
+
+img#writecomments:hover {
+    transform: scaleY(1.3);
+    transform: scaleX(1.07);
+}
+
+
+
+
+img#love {
+    display: block;
+    scale: 0.85;
+    /* align-items: center; */
+    padding-right: 0rem;
+    margin-right: 0px;
+    padding-left: 1rem;
+    width: 70%;
+    transform: scale();
+    position: relative;
+}
+
+img#love:hover {
+    transform: scaleY(1.3);
+    transform: scaleX(1.07);
+}
+
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .feed-box{
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        background: var(--feed-background); 
+        width: 70%;
+        height: 110%;
+        position: relative;
+        top: 2rem;
+        border-radius: 30px;
+        margin: auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+        /* animation-name: dropdown;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; */
+    }
+    
+    @keyframes h1 {
+        0%   {
+            top:0.6vh;
+        }
+        25%  {
+            top:0.2vh;
+            opacity: 0.75;
+            left: 5%;
+        }
+        50%  {
+            top:-0.2vh;
+            opacity: 0.5;
+            left: -3%;
+        }
+        75%  {
+            top:-0.6vh;
+            opacity: 0.25;
+            left: 1%;
+        }
+        100% {
+            top:-1.2vh;
+            opacity: 0;
+            left: -2%;
+            display: none;
+        }
+    }
+    
+    @keyframes h2 {
+        0%   {
+            top:7vh;
+        }
+        25%  {
+            top:6.2vh;
+            opacity: 0.75;
+            left: 5%;
+        }
+        50%  {
+            top:5.4vh;
+            opacity: 0.5;
+            left: -9%;
+        }
+        75%  {
+            top:4.6vh;
+            opacity: 0.25;
+            left: -4%;
+        }
+        100% {
+            top:3.2vh;
+            opacity: 0;
+            left: 3%;
+            display: none;
+        }
+    }
+    
+    @keyframes h3 {
+        0%   {
+            top:15vh;
+        }
+        25%  {
+            top:14.2vh;
+            opacity: 0.75;
+            left: -5%;
+        }
+        50%  {
+            top:13.4vh;
+            opacity: 0.5;
+            left: 4%;
+        }
+        75%  {
+            top:12.6vh;
+            opacity: 0.25;
+            left: -2%;
+            
+        }
+        100% {
+            top:11.2vh;
+            opacity: 0;
+            left: 1%;
+            display: none;
+        }
+    }
+    
+    #heart1{
+        position: relative;
+        scale: 0.5;
+        /* top: 3vh; */
+        top:1vh;
+        left: -10%;
+        transform: rotate(4deg);
+        animation: h1 0.6s ease-out ;
+    }
+    
+    #heart2{
+        position: relative;
+        margin-top:0;
+        left: -25%;
+        transform: rotate(-10deg);
+        /* top: 7vh; */
+    
+        top: 7vh;
+        scale: 0.75;
+        animation: h2 0.8s ease-out ;
+    }
+    
+    #heart3{
+        position: relative;
+        scale: 0.6;
+        top:15vh;
+        left: 10%;
+        transform: rotate(7deg);
+        animation: h3 0.8s ease-out ;
+        /* top: 9vh; */
+    }
+    
+    .heart-wrap{
+        display: flex;
+        display: column;
+        /* margin-top: 1.1%; */
+        gap:0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        justify-content: end;
+        
+    }
+    
+    .love-div-short{
+        margin-top: 0vh;
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px;
+        height: 30vh;
+        position: absolute;
+        width: 5vw;
+        top: 0;
+        left: 5vw;
+        /* background-color: black; */
+    }
+    
+    .love-div-long{
+        margin-top: -26vh;
+        display: flex;
+        flex-direction: column-reverse;
+        gap:0px;
+        height: 30vh;
+        position: absolute;
+        width: 5vw;
+        /* top: 0; */
+        left: 5vw;
+        z-index: 100;
+        /* background-color: black; */
+    }
+    
+    .comment-div{
+        font-size: 90%;
+        margin-top: 0vh;
+        padding-top: 0vh;
+    
+    }
+    
+    .cs-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 13vh;
+        top:0;
+        width: 100%;
+        overflow-y:auto;
+        margin: 0;
+        padding: 0;
+        gap:0px;
+    
+    }
+    
+    .comment-bar::placeholder{
+        font-size: 100%;
+        margin: auto;
+    }
+
+    @keyframes dropdown {
+        100% {height: 160%;}
+    }
+    
+    .interaction-bttn{
+        width: 5vw;
+        /* height: 3vh; */
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0px;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        margin: 0;
+    }
+    
+
+    
+.comment-bar {
+    align-self: center;
+    justify-self: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: 4vh;
+    border: none;
+    width: 30vh;
+    outline: black;
+    /* padding-left: 0; 
+}
+
+.comment-bar::placeholder {
+    float: left;
+    /* margin-left: 0; */
+    /* padding-left: 0; */
+    left: 6%;
+    top:17%;
+}
+
+.cin-wrapper{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    /* padding-left: 0;
+    margin-left: 0; */
+    left: 20%; 
+    /* height: 5vh; */
+}
+
+    .feed-box{
+        background: var(--feed-background); 
+        width: 90%;
+        height: 110%;
+        position: relative;
+        top: 2rem;
+        border-radius: 30px;
+        margin: auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    }
+   
+    .interaction-bttn{
+           background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    }
+
+    .feed-title{
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        height: 20%;
+        background: var(--feed-title);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 1%;
+    }
+    
+    .feed-boxes {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 5rem;
+    }
+    
+    .textgrid {
+        display: grid;
+        grid-auto-flow: row;
+        align-content: center;
+        justify-content: start;
+        align-items: baseline;
+        justify-items: start;
+    }
+    
+    .footbox {
+        display: grid;
+        width: 100%;
+        grid-auto-flow: column;
+        align-content: center;
+        justify-content: start;
+        justify-items: stretch;
+        align-items: center;
+    }
+    
+    .circle5 {
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+        float: left;
+        width: 9vmin;
+        height: 9vmin;
+        background-color: #ffffff00;
+        border: 4px #ffffff00;
+    }
+
+
+    h12 {
+        font-weight: 500;
+        color:black;
+        font-size: 70%;
+        font-family: "Poppins";
+        position: absolute;
+        left: 82%;
+        top: 85%;
+    }
+    
+    h15 {
+        float: left;
+        font-weight: 500;
+        margin-top: 0.2rem;
+        margin-left: 1rem;
+        font-family: "Poppins";
+    
+    }
+    
+    h16 {
+        float: left;
+        font-style: italic;
+        font-weight: 400;
+        margin-top: 0.2rem;
+        margin-left: 1rem;
+        font-family: "Poppins";
+        font-size: 60%;
+    }
+    
+    /*-----------------Images----------------*/
+    img#checkf {
+        display: block;
+        align-items: center;
+        position: absolute;
+        padding-right: 0.5rem;
+        width: 6%;
+    }
+    
+    img#readcomments {
+        left: 200%;
+        display: block;
+        align-items: center;
+        padding-right: -0.5rem;
+        padding-left: 1rem;
+        width: 170%;
+        transform: scale();
+        position: relative;
+    }
+    
+    img#readcomments:hover {
+        transform: scaleY(1.3);
+        transform: scaleX(1.07);
+    }
+    
+    img#writecomments {
+        left: -2vmin;
+        margin-top: 0.5rem;
+        display: block;
+        align-items: center;
+        padding-right: -0.5rem;
+        padding-left: 1rem;
+        width: 170%;
+        transform: scale();
+        position: relative;
+    }
+    
+    img#writecomments:hover {
+        transform: scaleY(1.3);
+        transform: scaleX(1.07);
+    }
+    
+    
+    img#love {
+        display: block;
+        align-items: center;
+        top: 1vmin;
+        left: 2vmin;
+        padding-right: -0.5rem;
+        padding-left: 1rem;
+        width: 130%;
+        transform: scale();
+        position: relative;
+    }
+
+    .likeCounter {  
+    font-size: 2.5vmin;
+    color: var(--counter-color);
+    font-weight: 600;
+    position: relative;
+    background-color: white;
+    border-radius: 50rem;
+    left: 70%;
+    bottom: -0.8rem;
+    z-index: 3;
+    width: 0%;
+    height: 4%;
+
+    }
+    
+    }
+    
